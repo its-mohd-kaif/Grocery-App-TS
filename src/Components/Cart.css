@@ -1,0 +1,43 @@
+.increBtn {
+  border-radius: 50%;
+  background: transparent;
+  font-size: large;
+  color: green;
+  border: 1px solid green;
+}
+
+.plus {
+  margin-right: 5px;
+}
+
+.minus {
+  margin-left: 5px;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #d6eeee;
+}
+
+.emptyBtn {
+  background-color: #666666;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
