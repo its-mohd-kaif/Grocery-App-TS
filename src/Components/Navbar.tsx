@@ -6,16 +6,6 @@ import { noteContext } from "../App";
 function Navbar() {
   let user: any = useContext(noteContext);
   let navigate = useNavigate();
-  const [login, setLogin] = useState("");
-
-  useEffect(() => {
-    let users = JSON.parse(localStorage.getItem("username") as any);
-    if (users === null) {
-      setLogin("Not Login");
-    } else {
-      setLogin(users[0].username);
-    }
-  }, [login]);
   const cartHandler = (e: any) => {
     e.preventDefault();
     // When new user try to open cart page then user have to firstly
@@ -108,7 +98,9 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   <i className="fas fa-user-alt" style={{ color: "black" }}></i>{" "}
-                  <span style={{ color: "black" }}>{login}</span>
+                  <span style={{ color: "black" }}>
+                    Hello Sign in to Your Account
+                  </span>
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
